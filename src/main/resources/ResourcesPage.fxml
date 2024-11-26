@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="616.0" prefWidth="663.0" style="-fx-background-color: #f7f2e7;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.ResourcesPage">
+<children>
+    <VBox layoutX="20.0" layoutY="7.0" prefWidth="600" spacing="10">
+        <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #228B22;" text="Resources and Workshops" />
+        <Label style="-fx-font-size: 14px; -fx-text-fill: #696969;" text="Browse and enroll in workshops or download resources to enhance your skills." />
+    </VBox>
+
+    <VBox layoutX="20" layoutY="80" prefWidth="600" spacing="10">
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #FF8C00;" text="Available Resources:" />
+        <TableView fx:id="resourcesTable" prefHeight="163.0" prefWidth="611.0" style="-fx-background-color: #FFF5E6;">
+            <columns>
+                <TableColumn fx:id="titleColumn" prefWidth="192.0" text="Title" />
+                <TableColumn fx:id="typeColumn" prefWidth="202.0" text="Type" />
+                <TableColumn fx:id="linkColumn" prefWidth="205.0" text="Download Link" />
+            </columns>
+        </TableView>
+        <Button fx:id="downloadResourceButton" style="-fx-font-size: 14px; -fx-background-color: #228B22; -fx-text-fill: white;" text="Download Resource" />
+    </VBox>
+
+    <VBox layoutX="20.0" layoutY="341.0" prefHeight="252.0" prefWidth="600" spacing="10">
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #FF8C00;" text="Upcoming Workshops:" />
+        <TableView fx:id="workshopsTable" prefHeight="279.0" prefWidth="600.0" style="-fx-background-color: #FFF5E6;">
+            <columns>
+                <TableColumn fx:id="workshopTitleColumn" prefWidth="190.0" text="Title" />
+                <TableColumn fx:id="dateColumn" prefWidth="202.0" text="Date" />
+                <TableColumn fx:id="registerLinkColumn" prefWidth="207.0" text="Registration Link" />
+            </columns>
+        </TableView>
+        <HBox spacing="10">
+            <Button fx:id="viewDetailsButton" style="-fx-font-size: 14px; -fx-background-color: #FF8C00; -fx-text-fill: white;" text="View Details" />
+            <Button fx:id="enrollButton" style="-fx-font-size: 14px; -fx-background-color: #228B22; -fx-text-fill: white;" text="Enroll Now" />
+        </HBox>
+    </VBox>
+</children>
+</AnchorPane>
