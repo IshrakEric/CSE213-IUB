@@ -1,49 +1,44 @@
 package com.midterm_2_2211182.shilpakala_academy;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import java.io.IOException;
 
 public class Core {
 
-    @FXML
-    void artists_button(ActionEvent event) {
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
 
+    @javafx.fxml.FXML
+    public void government_lawyers_button(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("Government_Lawyers.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
-    @FXML
-    void donor_button(ActionEvent event) {
-
+    @javafx.fxml.FXML
+    public void internal_order_providers_button(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("Government_Lawyers.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
-    @FXML
-    void event_manager_button(ActionEvent event) {
-
+    @javafx.fxml.FXML
+    public void back_button_core(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("Login_Data.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
-
-    @FXML
-    void government_lawyers_button(ActionEvent event) {
-
-    }
-
-    @FXML
-    void internal_order_providers_button(ActionEvent event) {
-
-    }
-
-    @FXML
-    void photographers_button(ActionEvent event) {
-
-    }
-
-    @FXML
-    void visitors_button(ActionEvent event) {
-
-    }
-
-    @FXML
-    void volunteer_button(ActionEvent event) {
-
-    }
-
 }
 

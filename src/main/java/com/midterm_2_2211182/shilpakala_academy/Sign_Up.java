@@ -2,102 +2,99 @@ package com.midterm_2_2211182.shilpakala_academy;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.awt.*;
+import java.io.IOException;
+import java.time.LocalDate;
 
 public class Sign_Up {
 
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
+
     @FXML
     private Label dob_label;
-
     @FXML
     private Label email_label;
-
     @FXML
     private Label password_label;
-
     @FXML
     private Label sign_up_label;
-
     @FXML
     private Label username_label;
-
     @FXML
-    void dob_field(ActionEvent event) {
-
-    }
-
+    private Label signup_label;
     @FXML
-    void email_field(ActionEvent event) {
-
-    }
-
+    private PasswordField password_field_signup;
     @FXML
-    void password_field(ActionEvent event) {
-
-    }
-
+    private TextField username_field_signup;
     @FXML
-    void username_field(ActionEvent event) {
+    private DatePicker dob_field_signup;
+    @FXML
+    private TextField email_field_signup;
 
+    @javafx.fxml.FXML
+    public void signUp_button(ActionEvent event) throws IOException {
+        checkSignup();
+
+        Parent root = FXMLLoader.load(getClass().getResource("Login_and_SignUp.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
-    public Sign_Up(Label dob_label, Label email_label, Label password_label, Label sign_up_label, Label username_label) {
-        this.dob_label = dob_label;
-        this.email_label = email_label;
-        this.password_label = password_label;
-        this.sign_up_label = sign_up_label;
-        this.username_label = username_label;
+    @javafx.fxml.FXML
+    public void back_button_signup(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Login_and_SignUp.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
-    public Label getDob_label() {
-        return dob_label;
+    private void checkSignup() throws IOException {
+        //Main m = new Main();
+        if(email_field_signup.getText().toString().equals("dummy") && password_field_signup.getText().toString().equals("123") && username_field_signup.getText().toString().equals("dummy") && dob_field_signup.getValue().isBefore(LocalDate.now())) {
+            signup_label.setText("Sign-Up Successful!");
+
+            //m.changeScene();
+        }
+
+        else if(email_field_signup.getText().isEmpty() && password_field_signup.getText().isEmpty()) {
+            signup_label.setText("Please enter your data.");
+        }
+
+
+        else {
+            signup_label.setText("Wrong username or password!");
+        }
     }
 
-    public void setDob_label(Label dob_label) {
-        this.dob_label = dob_label;
+    @Deprecated
+    public void password_field(ActionEvent actionEvent) {
     }
 
-    public Label getEmail_label() {
-        return email_label;
+    @Deprecated
+    public void email_field(ActionEvent actionEvent) {
     }
 
-    public void setEmail_label(Label email_label) {
-        this.email_label = email_label;
+    @Deprecated
+    public void username_field(ActionEvent actionEvent) {
     }
 
-    public Label getPassword_label() {
-        return password_label;
-    }
-
-    public void setPassword_label(Label password_label) {
-        this.password_label = password_label;
-    }
-
-    public Label getSign_up_label() {
-        return sign_up_label;
-    }
-
-    public void setSign_up_label(Label sign_up_label) {
-        this.sign_up_label = sign_up_label;
-    }
-
-    public Label getUsername_label() {
-        return username_label;
-    }
-
-    public void setUsername_label(Label username_label) {
-        this.username_label = username_label;
-    }
-
-    @Override
-    public String toString() {
-        return "Sign_Up{" +
-                "dob_label=" + dob_label +
-                ", email_label=" + email_label +
-                ", password_label=" + password_label +
-                ", sign_up_label=" + sign_up_label +
-                ", username_label=" + username_label +
-                '}';
+    @Deprecated
+    public void dob_field(ActionEvent actionEvent) {
     }
 }
 

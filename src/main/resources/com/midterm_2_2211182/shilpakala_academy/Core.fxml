@@ -5,13 +5,8 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2_2211182.shilpakala_academy.Core">
    <children>
-      <Button layoutX="40.0" layoutY="115.0" mnemonicParsing="false" onAction="#government_lawyers_button" text="Government Lawyers" />
-      <Button layoutX="212.0" layoutY="115.0" mnemonicParsing="false" onAction="#artists_button" text="Artists" />
-      <Button layoutX="455.0" layoutY="115.0" mnemonicParsing="false" onAction="#volunteer_button" text="Volunteer" />
-      <Button layoutX="32.0" layoutY="216.0" mnemonicParsing="false" onAction="#internal_order_providers_button" text="Internal Order Providers" />
-      <Button layoutX="212.0" layoutY="216.0" mnemonicParsing="false" onAction="#donor_button" text="Donor" />
-      <Button layoutX="320.0" layoutY="115.0" mnemonicParsing="false" onAction="#visitors_button" text="Visitors" />
-      <Button layoutX="300.0" layoutY="216.0" mnemonicParsing="false" onAction="#photographers_button" text="Photographers" />
-      <Button layoutX="441.0" layoutY="216.0" mnemonicParsing="false" onAction="#event_manager_button" text="Event Manager" />
+      <Button layoutX="176.0" layoutY="114.0" mnemonicParsing="false" onAction="#government_lawyers_button" prefHeight="49.0" prefWidth="249.0" text="Government Lawyers" />
+      <Button layoutX="176.0" layoutY="200.0" mnemonicParsing="false" onAction="#internal_order_providers_button" prefHeight="49.0" prefWidth="249.0" text="Internal Order Providers" />
+      <Button layoutX="45.0" layoutY="41.0" mnemonicParsing="false" onAction="#back_button_core" text="Back" />
    </children>
 </AnchorPane>

@@ -2,90 +2,80 @@ package com.midterm_2_2211182.shilpakala_academy;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class Login_Data {
 
-    @FXML
-    private TextField email_field;
-
-    @FXML
-    private Label email_label;
-
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
     @FXML
     private Label login_info_label;
-
     @FXML
-    private TextField password_field;
-
+    private Label email_label;
     @FXML
     private Label password_label;
-
     @FXML
-    void login_button(ActionEvent event) {
+    private TextField email_field_login_info;
+    @FXML
+    private PasswordField password_field_login_info;
+    @FXML
+    private Label login_label;
 
-    }
-
-    public TextField getEmail_field() {
-        return email_field;
-    }
-
-    public void setEmail_field(TextField email_field) {
-        this.email_field = email_field;
-    }
-
-    public Label getEmail_label() {
-        return email_label;
-    }
-
-    public void setEmail_label(Label email_label) {
-        this.email_label = email_label;
-    }
-
-    public Label getLogin_info_label() {
-        return login_info_label;
-    }
-
-    public void setLogin_info_label(Label login_info_label) {
-        this.login_info_label = login_info_label;
-    }
-
-    public TextField getPassword_field() {
-        return password_field;
-    }
-
-    public void setPassword_field(TextField password_field) {
-        this.password_field = password_field;
-    }
-
-    public Label getPassword_label() {
-        return password_label;
-    }
-
-    public void setPassword_label(Label password_label) {
-        this.password_label = password_label;
-    }
-
-    @Override
-    public String toString() {
-        return "Login_Data{" +
-                "email_field=" + email_field +
-                ", email_label=" + email_label +
-                ", login_info_label=" + login_info_label +
-                ", password_field=" + password_field +
-                ", password_label=" + password_label +
-                '}';
-    }
-
-    public Login_Data(TextField email_field, Label email_label, Label login_info_label, TextField password_field, Label password_label) {
-        this.email_field = email_field;
-        this.email_label = email_label;
-        this.login_info_label = login_info_label;
-        this.password_field = password_field;
-        this.password_label = password_label;
+    @javafx.fxml.FXML
+    public void back_button_login_info(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("Login_and_SignUp.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
 
+    @javafx.fxml.FXML
+    public void login_button(ActionEvent event) throws IOException {
+        checkLogin();
+
+        Parent root = FXMLLoader.load(getClass().getResource("Core.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void email_field_login_info(ActionEvent actionEvent) {
+
+    }
+
+    public void password_field_login_info(ActionEvent actionEvent) {
+
+    }
+
+    private void checkLogin() throws IOException {
+        //Main m = new Main();
+        if(email_field_login_info.getText().toString().equals("javacoding") && password_field_login_info.getText().toString().equals("123")) {
+            login_label.setText("Success!");
+
+            //m.changeScene();
+        }
+
+        else if(email_field_login_info.getText().isEmpty() && password_field_login_info.getText().isEmpty()) {
+            login_label.setText("Please enter your data.");
+        }
+
+
+        else {
+            login_label.setText("Wrong username or password!");
+        }
+    }
 
 }

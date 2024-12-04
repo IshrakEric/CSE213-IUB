@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2_2211182.shilpakala_academy.Sign_Up">
+<AnchorPane prefHeight="503.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2_2211182.shilpakala_academy.Sign_Up">
    <children>
       <Label fx:id="sign_up_label" layoutX="231.0" layoutY="63.0" text="Sign-Up">
          <font>
@@ -31,9 +33,12 @@
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Label>
-      <TextField layoutX="274.0" layoutY="165.0" onAction="#email_field" />
-      <TextField layoutX="274.0" layoutY="212.0" onAction="#password_field" />
-      <TextField layoutX="274.0" layoutY="315.0" onAction="#username_field" />
-      <DatePicker layoutX="274.0" layoutY="263.0" onAction="#dob_field" />
+      <TextField fx:id="email_field_signup" layoutX="274.0" layoutY="165.0" />
+      <PasswordField fx:id="password_field_signup" layoutX="274.0" layoutY="212.0" />
+      <TextField fx:id="username_field_signup" layoutX="274.0" layoutY="315.0" />
+      <DatePicker fx:id="dob_field_signup" layoutX="274.0" layoutY="263.0" />
+      <Button layoutX="309.0" layoutY="379.0" mnemonicParsing="false" onAction="#signUp_button" text="Signup" />
+      <Button layoutX="43.0" layoutY="77.0" mnemonicParsing="false" onAction="#back_button_signup" text="Back" />
+      <Label fx:id="signup_label" layoutX="285.0" layoutY="430.0" />
    </children>
 </AnchorPane>

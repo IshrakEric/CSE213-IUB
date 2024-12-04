@@ -6,22 +6,21 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.web.WebView?>
 
-<AnchorPane prefHeight="575.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2_2211182.shilpakala_academy.GovernmentLawyers3">
+<AnchorPane prefHeight="618.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2_2211182.shilpakala_academy.GovernmentLawyers3">
    <children>
       <Label layoutX="205.0" layoutY="53.0" text="Consititution">
          <font>
             <Font name="System Bold" size="31.0" />
          </font>
       </Label>
-      <ListView layoutX="106.0" layoutY="131.0" prefHeight="200.0" prefWidth="200.0" />
-      <TableView layoutX="356.0" layoutY="131.0" prefHeight="200.0" prefWidth="200.0">
+      <ListView layoutX="106.0" layoutY="179.0" prefHeight="200.0" prefWidth="200.0" />
+      <TableView layoutX="356.0" layoutY="179.0" prefHeight="200.0" prefWidth="200.0">
         <columns>
           <TableColumn prefWidth="75.0" text="C1" />
           <TableColumn prefWidth="75.0" text="C2" />
         </columns>
       </TableView>
-      <WebView layoutX="235.0" layoutY="342.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="208.0" layoutY="125.0" text="Consitution of Shilpakala Academy" />
    </children>
 </AnchorPane>
