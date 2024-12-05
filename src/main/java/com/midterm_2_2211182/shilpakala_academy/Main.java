@@ -6,6 +6,7 @@ import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
+import java.io.File;
 import java.io.IOException;
 
 public class Main extends Application {
@@ -32,7 +33,21 @@ public class Main extends Application {
         stage.getScene().setRoot(pane);
     }
 
+    /*
     public static void main(String[] args) {
         launch(args);
     }
+    */
+
+    public static void main(String[] args) {
+        File file = new File("src\\main\\java\\com\\midterm_2_2211182\\shilpakala_academy\\Zilla_Constitution.txt");
+
+        try {
+            file.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        launch(args);
+    }
+
 }

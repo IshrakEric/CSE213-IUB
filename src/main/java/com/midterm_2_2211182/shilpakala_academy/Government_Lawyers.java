@@ -17,7 +17,7 @@ public class Government_Lawyers {
 
     @javafx.fxml.FXML
     public void act_and_rules_tab_button(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Government_Lawyers_Constitution.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Government_Lawyers_Choose.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
