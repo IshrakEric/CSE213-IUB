@@ -1,4 +1,4 @@
-package com.midterm_2_2211182.shilpakala_academy.IshrakAhmed;
+package Ishrak;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

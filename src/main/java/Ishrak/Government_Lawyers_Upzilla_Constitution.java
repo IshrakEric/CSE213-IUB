@@ -1,4 +1,4 @@
-package com.midterm_2_2211182.shilpakala_academy.IshrakAhmed;
+package Ishrak;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -18,13 +18,13 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
-public class Government_Lawyers_Zilla_Constitution implements Initializable {
-
-    FileChooser filechooser = new FileChooser();
+public class Government_Lawyers_Upzilla_Constitution implements Initializable {
 
     private Stage stage;
     private Scene scene;
     private Parent root;
+
+    FileChooser filechooser = new FileChooser();
 
     @javafx.fxml.FXML
     private TextArea Information_Area;
@@ -44,7 +44,7 @@ public class Government_Lawyers_Zilla_Constitution implements Initializable {
     }
 
     @javafx.fxml.FXML
-    public void back_button_glzc(ActionEvent event) throws IOException {
+    public void back_button_gluzc(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("Government_Lawyers_Choose.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
@@ -58,3 +58,4 @@ public class Government_Lawyers_Zilla_Constitution implements Initializable {
     }
 
 }
+
