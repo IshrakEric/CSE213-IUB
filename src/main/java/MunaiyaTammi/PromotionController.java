@@ -1,4 +1,4 @@
-package MunaiyaTammi.package.name;
+package MunaiyaTammi;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
