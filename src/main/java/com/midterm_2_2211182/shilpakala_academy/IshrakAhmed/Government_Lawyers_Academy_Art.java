@@ -1,4 +1,4 @@
-package com.midterm_2_2211182.shilpakala_academy;
+package com.midterm_2_2211182.shilpakala_academy.IshrakAhmed;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -9,10 +9,8 @@ import javafx.scene.Scene;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.scene.control.TextArea;
-import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 
-import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;

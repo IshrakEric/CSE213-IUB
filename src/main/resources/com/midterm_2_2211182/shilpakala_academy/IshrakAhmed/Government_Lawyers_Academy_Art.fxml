@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2_2211182.shilpakala_academy.Government_Lawyers_Academy_Art">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2_2211182.shilpakala_academy.IshrakAhmed.Government_Lawyers_Academy_Art">
    <children>
       <Label layoutX="190.0" layoutY="44.0" text="Academy Art">
          <font>
