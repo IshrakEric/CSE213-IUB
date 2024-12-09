@@ -16,7 +16,7 @@ public class Core {
 
     @javafx.fxml.FXML
     public void government_lawyers_button(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("Government_Lawyers.fxml"));
+        root = FXMLLoader.load(getClass().getResource("Ishrak.Government_Lawyers.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -25,7 +25,7 @@ public class Core {
 
     @javafx.fxml.FXML
     public void internal_order_providers_button(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("Government_Lawyers.fxml"));
+        root = FXMLLoader.load(getClass().getResource("Ishrak.Government_Lawyers.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
