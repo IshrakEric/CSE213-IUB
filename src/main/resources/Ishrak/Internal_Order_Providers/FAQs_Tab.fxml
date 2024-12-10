@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <tabs>
+        <!-- FAQs Tab -->
+        <Tab text="Q1">
+            <AnchorPane>
+                <children>
+                    <Accordion layoutX="10.0" layoutY="10.0" prefHeight="380.0" prefWidth="580.0">
+                        <!-- Question 1 -->
+
+                        <!-- Question 2 -->
+
+                        <!-- Question 3 -->
+                        
+                    </Accordion>
+               <TextArea prefHeight="200.0" prefWidth="600.0" text="What is JavaFX?&#10;&#10;JavaFX is a software platform for creating and delivering desktop applications, &#10;as well as rich Internet applications (RIAs) that can run across a wide variety of devices." />
+                </children>
+            </AnchorPane>
+        </Tab>
+
+        <!-- Other Tabs Placeholder (Optional) -->
+        <Tab text="Q2">
+            <AnchorPane>
+            <children>
+               <TextArea prefHeight="200.0" prefWidth="600.0" text="How to use Scene Builder?&#10;&#10;Scene Builder is a visual layout tool for designing JavaFX applications. &#10;You can drag and drop UI components, set properties, and save your design as an FXML file." />
+            </children></AnchorPane>
+        </Tab>
+        <Tab text="Q3">
+            <AnchorPane>
+            <children>
+               <TextArea prefHeight="200.0" prefWidth="600.0" text="Can I style JavaFX applications?&#10;&#10;Yes, JavaFX supports CSS for styling UI components. &#10;You can customize colors, fonts, borders, and more to create professional-looking applications." />
+            </children></AnchorPane>
+        </Tab>
+    </tabs>
+</TabPane>
