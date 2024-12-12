@@ -10,6 +10,6 @@
             fx:id="DashboardBorderPaneFx"
             xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.oopproject2024.DashboardSceneController"
+            fx:controller="com.midterm_2_2211182.shilpakala_academy.Rafid.DashboardSceneController"
             prefHeight="600.0" prefWidth="600.0">
 </BorderPane>
