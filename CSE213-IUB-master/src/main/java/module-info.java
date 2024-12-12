@@ -9,7 +9,7 @@ module com.midterm_2_2211182.shilpakala_academy {
 
     opens com.midterm_2_2211182.shilpakala_academy.Rafid to javafx.fxml;  // If you're using FXML
 
-
+ 
     opens com.midterm_2_2211182.shilpakala_academy to javafx.fxml;
     exports com.midterm_2_2211182.shilpakala_academy;
 }
