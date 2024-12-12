@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane fx:id="maintab" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ishrak.Internal_Order_Providers.FAQs_Tab">
+    <tabs>
+        <!-- FAQs Tab -->
+        <Tab fx:id="q1tab" text="Q1">
+            <AnchorPane>
+                <children>
+                    <Accordion layoutX="10.0" layoutY="10.0" prefHeight="380.0" prefWidth="580.0">
+                        <!-- Question 1 -->
+
+                        <!-- Question 2 -->
+
+                        <!-- Question 3 -->
+
+                    </Accordion>
+               <TextArea prefHeight="200.0" prefWidth="600.0" text="1. What is Shilpakala Academy?&#10;&#10;Answer:&#10;Shilpakala Academy is the national academy of fine and performing arts in Bangladesh. &#10;Established in 1974, it promotes and preserves the cultural heritage of Bangladesh through various art forms, &#10;including music, dance, theater, and visual arts." />
+                </children>
+            </AnchorPane>
+        </Tab>
+
+        <!-- Other Tabs Placeholder (Optional) -->
+        <Tab fx:id="q2tab" text="Q2">
+            <AnchorPane>
+            <children>
+               <TextArea prefHeight="200.0" prefWidth="600.0" text="2. What are the main activities of Shilpakala Academy?&#10;&#10;Answer:&#10;Shilpakala Academy organizes art exhibitions, cultural programs, workshops, and training courses in music, &#10;dance, painting, and drama. &#10;It also plays a key role in preserving traditional Bangladeshi art and fostering cultural exchange." />
+            </children></AnchorPane>
+        </Tab>
+        <Tab fx:id="q3tab" text="Q3">
+            <AnchorPane>
+            <children>
+               <TextArea prefHeight="200.0" prefWidth="600.0" text="3. Where is Shilpakala Academy located?&#10;Answer:&#10;Shilpakala Academy is located in Dhaka, Bangladesh, on Segun Bagicha Road near Ramna Park. &#10;It serves as the central hub for cultural events and artistic endeavors in the country." />
+            </children></AnchorPane>
+        </Tab>
+    </tabs>
+</TabPane>

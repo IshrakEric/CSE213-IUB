@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="618.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2_2211182.shilpakala_academy.Government_Lawyers_Zilla_Constitution">
+   <children>
+      <Label layoutX="205.0" layoutY="53.0" text="Consititution">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="125.0" text="Consitution of Shilpakala Academy" />
+      <TextArea fx:id="Information_Area" layoutX="19.0" layoutY="199.0" prefHeight="200.0" prefWidth="558.0" />
+      <Button layoutX="274.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#Activator_Button" text="Activator" />
+      <Button layoutX="28.0" layoutY="64.0" mnemonicParsing="false" onAction="#back_button_glzc" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2_2211182.shilpakala_academy.Government_Lawyers_Regulations">
+   <children>
+      <Label layoutX="201.0" layoutY="34.0" text="Regulations">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="347.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true" />
+      <TextArea fx:id="Information_Area" layoutX="22.0" layoutY="100.0" prefHeight="200.0" prefWidth="560.0" />
+      <Button layoutX="276.0" layoutY="331.0" mnemonicParsing="false" onMouseClicked="#Activator_Button" text="Activator" />
+      <Button layoutX="22.0" layoutY="48.0" mnemonicParsing="false" onAction="#back_button_glr" text="Back" />
+   </children>
+</AnchorPane>
