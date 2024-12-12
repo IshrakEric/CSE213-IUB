@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="670.0" style="-fx-background-color: #9ACD32;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject2024.AdminSceneController">
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="670.0" style="-fx-background-color: #9ACD32;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2_2211182.shilpakala_academy.Rafid.AdminSceneController">
     <children>
         <Label layoutX="182.0" layoutY="38.0" text="বাংলাদেশ শিল্পকলা একাডেমি" textFill="#bf0808">
             <font>
