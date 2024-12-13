@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="670.0" style="-fx-background-color: #9ACD32;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject2024.RegistrationSceneController">
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="670.0" style="-fx-background-color: #9ACD32;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2_2211182.shilpakala_academy.Rafid.RegistrationSceneController">
    <children>
       <TextField fx:id="idTextField" layoutX="148.0" layoutY="229.0" prefHeight="25.0" prefWidth="98.0" />
       <Label layoutX="20.0" layoutY="232.0" text="Enter preferred ID:" textFill="#bf0808">

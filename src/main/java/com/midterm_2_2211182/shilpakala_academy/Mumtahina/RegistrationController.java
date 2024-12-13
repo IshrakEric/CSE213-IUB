@@ -1,6 +1,7 @@
-package com.midterm_2_2211182.shilpakala_academy.Mumtahina;
+package com.example.shilpakala;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
@@ -23,18 +24,22 @@ public class RegistrationController
 
     @javafx.fxml.FXML
     public void RegisterButtonOnClick(ActionEvent actionEvent) {
-        RegisteredUsers newUser = new RegisteredUsers(
-                NameField.getText(),
-                PhoneField.getText(),
-                AddressField.getText()
+        label.setText(
+                "Name: " + NameField.getText() + "\n" +
+                        "Phone: " + PhoneField.getText() + "\n" +
+                        "Address: " + AddressField.getText()
         );
 
-        label.setText(newUser.print());
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Registration Successful");
+        alert.setHeaderText(null);
+        alert.setContentText("User has been successfully registered!");
+        alert.showAndWait();
 
     }
     @javafx.fxml.FXML
     public void BackButtonOnClick(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchScene(actionEvent,"VisitorDashboard.fxml");
+        SceneSwitcher.switchScene(actionEvent,"PhotographerDashboard.fxml");
     }
 }
 

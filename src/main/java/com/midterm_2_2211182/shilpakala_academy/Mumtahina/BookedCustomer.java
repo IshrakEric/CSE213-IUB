@@ -1,4 +1,4 @@
-package com.midterm_2_2211182.shilpakala_academy.Mumtahina;
+package com.example.shilpakala;
 
 public class BookedCustomer {
 

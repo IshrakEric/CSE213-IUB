@@ -1,4 +1,4 @@
-package com.midterm_2_2211182.shilpakala_academy.Mumtahina;
+package com.example.shilpakala;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.TextArea;
@@ -24,12 +24,12 @@ public class EventsAndExhibitionController
 
         StringBuilder outputStr = new StringBuilder();
 
-        // Read the file content
+
         try (Scanner sc = new Scanner(selectedFile)) {
             while (sc.hasNextLine()) {
                 outputStr.append(sc.nextLine()).append("\n");
             }
-            // Set the content to the label
+
             textField.setText(outputStr.toString());
         } catch (IOException e) {
             textField.setText("Error reading the file.");
@@ -44,12 +44,12 @@ public class EventsAndExhibitionController
 
         StringBuilder outputStr = new StringBuilder();
 
-        // Read the file content
+
         try (Scanner sc = new Scanner(selectedFile)) {
             while (sc.hasNextLine()) {
                 outputStr.append(sc.nextLine()).append("\n");
             }
-            // Set the content to the label
+
             textField.setText(outputStr.toString());
         } catch (IOException e) {
             textField.setText("Error reading the file.");
@@ -64,12 +64,12 @@ public class EventsAndExhibitionController
 
         StringBuilder outputStr = new StringBuilder();
 
-        // Read the file content
+
         try (Scanner sc = new Scanner(selectedFile)) {
             while (sc.hasNextLine()) {
                 outputStr.append(sc.nextLine()).append("\n");
             }
-            // Set the content to the label
+
             textField.setText(outputStr.toString());
         } catch (IOException e) {
             textField.setText("Error reading the file.");

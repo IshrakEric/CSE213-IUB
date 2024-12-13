@@ -1,4 +1,4 @@
-package com.midterm_2_2211182.shilpakala_academy.Mumtahina;
+package com.example.shilpakala;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
@@ -27,14 +27,11 @@ public class OnlineBookingController
 
     @javafx.fxml.FXML
     public void bookButtonOnClick(ActionEvent actionEvent) {
-        BookedCustomer newCustomer = new BookedCustomer(
-                nameField.getText(),
-                designationField.getText(),
-                numberField.getText()
+        label.setText(
+                "Booked for Name: " + nameField.getText() + "\n" +
+                        "Designation: " + designationField.getText() +
+                        " Number: " + numberField.getText()
         );
-
-        label.setText(newCustomer.print());
-
     }
 
     @javafx.fxml.FXML
