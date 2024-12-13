@@ -17,7 +17,7 @@ public class VisitorDashboard
 
     @javafx.fxml.FXML
     public void Payment(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchScene(actionEvent,"OnlineBooking.fxml");
+        SceneSwitcher.switchScene(actionEvent,"PaymentVisitor.fxml");
     }
 
     @javafx.fxml.FXML

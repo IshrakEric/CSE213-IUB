@@ -51,4 +51,9 @@ public class PhotographerDashboard
     public void RegistrtionButtonOnClick(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchScene(actionEvent,"Registration.fxml");
     }
+
+    @javafx.fxml.FXML
+    public void myCoursesButtonOnClick(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchScene(actionEvent,"MyCourses.fxml");
+    }
 }

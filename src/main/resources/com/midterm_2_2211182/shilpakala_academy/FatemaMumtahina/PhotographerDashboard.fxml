@@ -18,7 +18,7 @@
       <Button layoutX="348.0" layoutY="156.0" mnemonicParsing="false" onAction="#CourseDetailsButtonOnClick" prefHeight="49.0" prefWidth="187.0" text="Course Details" />
       <Button layoutX="64.0" layoutY="230.0" mnemonicParsing="false" onAction="#WorkshopButtonOnClick" prefHeight="49.0" prefWidth="187.0" text="Workshops" />
       <Button layoutX="348.0" layoutY="230.0" mnemonicParsing="false" onAction="#EventsButtonOnClick" prefHeight="49.0" prefWidth="187.0" text="Events" />
-      <Button layoutX="64.0" layoutY="298.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="187.0" text="Button" />
+      <Button layoutX="64.0" layoutY="298.0" mnemonicParsing="false" onAction="#myCoursesButtonOnClick" prefHeight="49.0" prefWidth="187.0" text="My Courses" />
       <Button layoutX="348.0" layoutY="298.0" mnemonicParsing="false" onAction="#UpdateButtonOnClick" prefHeight="49.0" prefWidth="187.0" text="Updates" />
       <Button layoutX="270.0" layoutY="313.0" mnemonicParsing="false" onAction="#BackButtonOnClick" prefHeight="34.0" prefWidth="60.0" text="Back" />
    </children>
