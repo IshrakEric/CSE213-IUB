@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shilpakala.PaymentPhotographerController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shilpakala.PaymentPhotographerController">
    <children>
       <Label layoutX="66.0" layoutY="60.0" prefHeight="18.0" prefWidth="107.0" text="Payment">
          <font>
@@ -19,7 +19,7 @@
       <Label layoutX="66.0" layoutY="178.0" text="Course Name:" />
       <Label layoutX="66.0" layoutY="221.0" text="TRX ID :" />
       <Label layoutX="66.0" layoutY="259.0" text="Payment method" />
-      <Button layoutX="68.0" layoutY="317.0" mnemonicParsing="false" text="Pay" />
+      <Button layoutX="68.0" layoutY="317.0" mnemonicParsing="false" onAction="#payButtonOnClick" text="Pay" />
       <RadioButton layoutX="187.0" layoutY="259.0" mnemonicParsing="false" text="Bkash" />
       <RadioButton layoutX="293.0" layoutY="259.0" mnemonicParsing="false" text="Nagad" />
       <RadioButton layoutX="392.0" layoutY="259.0" mnemonicParsing="false" text="Bank" />
