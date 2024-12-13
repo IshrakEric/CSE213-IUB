@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="519.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2_2211182.shilpakala_academy.MunaiyaTammi.DonorEngagementController">
+
+<children>
+    <Label layoutX="180.0" layoutY="20.0" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Academy Updates for Donors" textFill="#4cc32f">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+
+    <Label layoutX="50.0" layoutY="80.0" text="Recent Updates:" />
+    <TableView fx:id="updatesTable" layoutX="50.0" layoutY="110.0" prefHeight="200.0" prefWidth="500.0">
+        <columns>
+            <TableColumn fx:id="updateTitleColumn" prefWidth="177.0" text="Update Title" />
+            <TableColumn fx:id="updateDateColumn" prefWidth="144.0" text="Date" />
+            <TableColumn fx:id="updateTypeColumn" prefWidth="179.0" text="Type" />
+        </columns>
+    </TableView>
+
+    <Label layoutX="50.0" layoutY="330.0" text="Update Details:" />
+    <TextArea fx:id="updateDetailsArea" editable="false" layoutX="50.0" layoutY="360.0" prefHeight="80.0" prefWidth="500.0" wrapText="true" />
+    <Button fx:id="feedbackButton" layoutX="250.0" layoutY="458.0" onAction="#onfeedbackButtonClick" text="Share Feedback" />
+</children>
+</AnchorPane>

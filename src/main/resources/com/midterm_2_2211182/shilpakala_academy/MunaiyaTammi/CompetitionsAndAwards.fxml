@@ -11,8 +11,9 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="585.0" prefWidth="634.0" style="-fx-background-color: #F8F8FF;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.CompetitionController">
+<AnchorPane prefHeight="603.0" prefWidth="668.0" style="-fx-background-color: #F8F8FF;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2_2211182.shilpakala_academy.MunaiyaTammi.CompetitionController">
     <children>
         <VBox layoutX="20" layoutY="20" spacing="10">
             <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2C3E50;" text="Competitions and Awards" />
@@ -20,7 +21,10 @@
         </VBox>
 
         <VBox layoutX="20.0" layoutY="96.0" prefHeight="170.0" prefWidth="600" spacing="10">
-            <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #2980B9;" text="Available Competitions and Awards:" />
+            <Label text="Available Competitions and Awards:">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font></Label>
             <TableView fx:id="competitionTable" prefHeight="140.0" prefWidth="600.0">
                 <columns>
                     <TableColumn prefWidth="200" text="Competition Name" />
@@ -31,11 +35,11 @@
         </VBox>
 
         <VBox layoutX="20.0" layoutY="317.0" prefWidth="600" spacing="10">
-            <TextArea fx:id="competitionDetailsArea" editable="false" prefHeight="100" prefWidth="550" />
+            <TextArea fx:id="competitionDetailsArea" editable="false" prefHeight="86.0" prefWidth="600.0" />
         </VBox>
 
         <VBox layoutX="20.0" layoutY="437.0" prefWidth="600" spacing="10">
-            <GridPane hgap="10" vgap="10">
+            <GridPane hgap="10" prefHeight="55.0" prefWidth="600.0" vgap="10">
                 <children>
                     <Label text="Full Name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
                     <TextField fx:id="nameField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
@@ -58,8 +62,14 @@
             </GridPane>
         </VBox>
 
-        <Button fx:id="submitApplicationButton" layoutX="20.0" layoutY="540.0" prefHeight="6.0" prefWidth="122.0" style="-fx-background-color: #27AE60; -fx-text-fill: white;" text="Submit Application" />
-         <Label layoutX="20.0" layoutY="277.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #2980B9;" text="Competition Details:" />
-         <Label layoutX="20.0" layoutY="410.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #2980B9;" text="Enter Your Information to Participate:" />
+        <Button fx:id="submitApplicationButton" layoutX="20.0" layoutY="557.0" prefHeight="6.0" prefWidth="122.0" text="Submit Application" />
+         <Label layoutX="20.0" layoutY="277.0" text="Competition Details:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+         <Label layoutX="20.0" layoutY="410.0" text="Enter Your Information to Participate:">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
     </children>
 </AnchorPane>

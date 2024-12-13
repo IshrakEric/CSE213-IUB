@@ -1,14 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.oopproject.Profile_Page"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2_2211182.shilpakala_academy.MunaiyaTammi.Profile_Page_Controller">
+<children>
+    <Label layoutX="300" layoutY="20" style="-fx-font-size: 24; -fx-font-weight: bold; -fx-text-fill: #333;" text="Artist Profile">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
 
+    <VBox layoutX="47.0" layoutY="86.0" spacing="15">
+        <HBox spacing="10">
+            <Label style="-fx-font-size: 14;" text="Full Name:" />
+            <TextField fx:id="fullNameField" promptText="Enter your full name" />
+        </HBox>
+        <HBox spacing="10">
+            <Label style="-fx-font-size: 14;" text="Email:" />
+            <TextField fx:id="emailField" promptText="Enter your email" />
+        </HBox>
+        <HBox spacing="10">
+            <Label style="-fx-font-size: 14;" text="Contact Number:" />
+            <TextField fx:id="contactField" promptText="Enter contact number" />
+        </HBox>
+        <HBox spacing="10">
+            <Label style="-fx-font-size: 14;" text="Biography:" />
+            <TextArea fx:id="biographyArea" prefHeight="100" prefWidth="300" promptText="Write a short biography here" />
+        </HBox>
+        <HBox spacing="10">
+            <Label style="-fx-font-size: 14;" text="Profile Picture:" />
+            <Button fx:id="uploadProfilePicButton" onAction="#onUploadProfilePic" text="Upload" />
+        </HBox>
+        <HBox spacing="10">
+            <Label style="-fx-font-size: 14;" text="Privacy Settings:" />
+            <ComboBox fx:id="privacySettings" promptText="Choose Privacy Level">
+            </ComboBox>
+        </HBox>
+    </VBox>
+
+    <VBox layoutX="507.0" layoutY="86.0" spacing="15">
+        <Label style="-fx-font-size: 18; -fx-font-weight: bold;" text="Upload Portfolio" />
+        <HBox spacing="10">
+            <Label style="-fx-font-size: 14;" text="Upload Images:" />
+            <Button fx:id="uploadImagesButton" onAction="#onUploadImages" text="Select Files" />
+        </HBox>
+        <HBox spacing="10">
+            <Label style="-fx-font-size: 14;" text="Upload Videos:" />
+            <Button fx:id="uploadVideosButton" onAction="#onUploadVideos" text="Select Files" />
+        </HBox>
+        <HBox spacing="10">
+            <Label style="-fx-font-size: 14;" text="Upload Audio Files:" />
+            <Button fx:id="uploadAudioButton" onAction="#onUploadAudio" text="Select Files" />
+        </HBox>
+    </VBox>
+
+    <Button fx:id="saveProfileButton" layoutX="300.0" layoutY="446.0" onAction="#onSaveProfile" prefWidth="200" text="Save Profile" />
+    <Label layoutX="288.0" layoutY="478.0" style="-fx-font-size: 12; -fx-text-fill: #888;" text="Your public profile will be visible once saved." />
+</children>
 </AnchorPane>

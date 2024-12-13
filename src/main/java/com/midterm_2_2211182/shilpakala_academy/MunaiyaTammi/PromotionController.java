@@ -1,33 +1,47 @@
 package com.midterm_2_2211182.shilpakala_academy.MunaiyaTammi;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
 public class PromotionController {
 
     @FXML
-    private RadioButton showcaseEventOption;
+    private ComboBox<?> artworkSelection;
+
+    @FXML
+    private Button confirmPublishButton;
+
     @FXML
     private RadioButton onlineStoreOption;
-    @FXML
-    private ComboBox<String> artworkSelection; // Replace <String> with your data model if needed
+
     @FXML
     private TextField priceField;
+
     @FXML
     private TextArea promotionDetailsArea;
 
     @FXML
-    private void handleRetrieveDetails() {
-        System.out.println("Retrieving details for selected item...");
+    private Button retrieveDetailsButton;
+
+    @FXML
+    private RadioButton showcaseEventOption;
+
+    @FXML
+    private Button validateButton;
+
+    @FXML
+    private ToggleGroup ChoosePromotion;
+
+    @FXML
+    public void onRetrieveDetailsButton(ActionEvent actionEvent) {
     }
 
     @FXML
-    private void handleValidateInformation() {
-        System.out.println("Validating input...");
+    public void onConfirmPublishButtonClick(ActionEvent actionEvent) {
     }
 
     @FXML
-    private void handleConfirmPublish() {
-        System.out.println("Publishing listing...");
+    public void onValidateButtonClick(ActionEvent actionEvent) {
     }
 }

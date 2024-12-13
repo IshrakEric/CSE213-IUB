@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2_2211182.shilpakala_academy.MunaiyaTammi.SupportProjectsController">
+
+    <children>
+        <Label layoutX="200.0" layoutY="20.0" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Support Cultural Projects" textFill="#e89345" />
+
+        <Label layoutX="50.0" layoutY="80.0" text="Select a Project:" />
+        <ComboBox fx:id="projectComboBox" layoutX="180.0" layoutY="75.0" prefHeight="25.0" prefWidth="214.0" promptText="Choose a cultural project" />
+
+        <Label layoutX="50.0" layoutY="130.0" text="Donation Amount:" />
+        <TextField fx:id="donationAmountField" layoutX="180.0" layoutY="125.0" prefHeight="25.0" prefWidth="214.0" />
+
+        <Label layoutX="50.0" layoutY="180.0" text="Payment Method:" />
+        <RadioButton fx:id="creditCardRadioButton" layoutX="180.0" layoutY="180.0" text="Credit Card">
+         <toggleGroup>
+            <ToggleGroup fx:id="paymentToggleGroup" />
+         </toggleGroup></RadioButton>
+        <RadioButton fx:id="bankTransferRadioButton" layoutX="287.0" layoutY="180.0" text="Bank Transfer" toggleGroup="$paymentToggleGroup" />
+        <RadioButton fx:id="mobilePaymentRadioButton" layoutX="407.0" layoutY="180.0" text="Mobile Payment" toggleGroup="$paymentToggleGroup" />
+        
+
+        <Label layoutX="50.0" layoutY="230.0" text="Add a Message (Optional):" />
+        <TextArea fx:id="messageArea" layoutX="209.0" layoutY="230.0" prefHeight="100.0" prefWidth="300.0" />
+
+        <Button fx:id="submitDonationButton" layoutX="247.0" layoutY="359.0" text="Submit Donation" />
+    </children>
+</AnchorPane>

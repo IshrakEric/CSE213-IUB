@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2_2211182.shilpakala_academy.MunaiyaTammi.TrackDonationsController">
+
+<children>
+    <Label layoutX="181.0" layoutY="22.0" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Track Donations and Impact" textFill="#eba139">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+
+    <Label layoutX="50.0" layoutY="80.0" text="Select Date Range:" />
+    <DatePicker fx:id="startDatePicker" layoutX="180.0" layoutY="75.0" promptText="Start Date" />
+    <DatePicker fx:id="endDatePicker" layoutX="367.0" layoutY="75.0" promptText="End Date" />
+
+    <Label layoutX="50.0" layoutY="130.0" text="Filter by:" />
+    <RadioButton fx:id="eventRadioButton" layoutX="180.0" layoutY="130.0" text="Events">
+         <toggleGroup>
+            <ToggleGroup fx:id="FilterGroup" />
+         </toggleGroup></RadioButton>
+    <RadioButton fx:id="artistRadioButton" layoutX="280.0" layoutY="130.0" text="Artists" toggleGroup="$FilterGroup" />
+
+    <TableView fx:id="donationTable" layoutX="50.0" layoutY="180.0" prefHeight="200.0" prefWidth="500.0">
+        <columns>
+            <TableColumn fx:id="donorNameColumn" prefWidth="138.0" text="Donor Name" />
+            <TableColumn fx:id="amountColumn" prefWidth="112.0" text="Amount" />
+            <TableColumn fx:id="dateColumn" prefWidth="114.0" text="Date" />
+            <TableColumn fx:id="purposeColumn" prefWidth="136.0" text="Purpose" />
+        </columns>
+    </TableView>
+
+    <Label layoutX="50.0" layoutY="400.0" text="Total Donations:" />
+    <TextField fx:id="totalDonationsField" editable="false" layoutX="180.0" layoutY="395.0" prefWidth="150.0" />
+
+    <Label layoutX="50.0" layoutY="440.0" text="Impact Highlights:" />
+    <TextArea fx:id="impactHighlightsArea" editable="false" layoutX="180.0" layoutY="435.0" prefHeight="40.0" prefWidth="350.0" wrapText="true" />
+</children>
+</AnchorPane>

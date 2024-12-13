@@ -10,13 +10,13 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="591.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.NetworkingPage">
+<AnchorPane prefHeight="591.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2_2211182.shilpakala_academy.MunaiyaTammi.NetworkingController">
 <children>
     <VBox layoutX="20" layoutY="20" prefWidth="600" spacing="10">
         <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Networking and Collaboration" />
         <HBox spacing="10">
             <TextField fx:id="searchField" prefWidth="400" promptText="Search Artists by Name, Skill, or Location" />
-            <Button fx:id="searchButton" text="Search" />
+            <Button fx:id="searchButton" onAction="#onSearchButtonClick" text="Search" />
         </HBox>
     </VBox>
 
@@ -24,9 +24,9 @@
         <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Search Results:" />
         <TableView fx:id="artistTable" prefHeight="200">
             <columns>
-                <TableColumn fx:id="nameColumn" text="Name" />
-                <TableColumn fx:id="skillsColumn" text="Skills" />
-                <TableColumn fx:id="locationColumn" text="Location" />
+                <TableColumn fx:id="nameColumn" prefWidth="204.0" text="Name" />
+                <TableColumn fx:id="skillsColumn" prefWidth="193.0" text="Skills" />
+                <TableColumn fx:id="locationColumn" prefWidth="202.0" text="Location" />
             </columns>
         </TableView>
 
@@ -34,9 +34,9 @@
            <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Collaboration Request:" />
            <Label text="Message:" />
            <TextArea fx:id="collaborationMessageField" prefHeight="80" promptText="Write a message to request collaboration" />
-           <Button fx:id="sendRequestButton" style="-fx-font-size: 14px;" text="Send Request" />
+           <Button fx:id="sendRequestButton" onAction="#onSendRequestButtonClick" style="-fx-font-size: 14px;" text="Send Request" />
        </VBox>
-        <Button fx:id="viewProfileButton" style="-fx-font-size: 14px;" text="View Profile" />
+        <Button fx:id="viewProfileButton" onAction="#onViewProfileButtonClick" style="-fx-font-size: 14px;" text="View Profile" />
     </VBox>
 </children>
 </AnchorPane>
