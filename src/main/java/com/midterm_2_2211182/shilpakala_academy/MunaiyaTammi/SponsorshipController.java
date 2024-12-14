@@ -31,7 +31,7 @@ public class SponsorshipController {
     private TextField sponsorshipAmountField;
 
     @FXML
-    private ComboBox<?> sponsorshipOptionsBox;
+    private ComboBox<String > sponsorshipOptionsBox;
 
     @FXML
     private Button submitSponsorshipButton;

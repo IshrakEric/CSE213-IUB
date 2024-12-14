@@ -13,19 +13,19 @@ public class DonorEngagementController {
     private Button feedbackButton;
 
     @FXML
-    private TableColumn<?, ?> updateDateColumn;
+    private TableColumn<Donor, Integer> updateDateColumn;
 
     @FXML
     private TextArea updateDetailsArea;
 
     @FXML
-    private TableColumn<?, ?> updateTitleColumn;
+    private TableColumn<Donor, String> updateTitleColumn;
 
     @FXML
-    private TableColumn<?, ?> updateTypeColumn;
+    private TableColumn<Donor,String> updateTypeColumn;
 
     @FXML
-    private TableView<?> updatesTable;
+    private TableView<String> updatesTable;
 
     @FXML
     void onfeedbackButtonClick(ActionEvent event) {

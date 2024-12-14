@@ -7,6 +7,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 
+import java.time.LocalDate;
+
 public class ExclusiveInvitationsController {
 
     @FXML
@@ -16,19 +18,19 @@ public class ExclusiveInvitationsController {
     private Button declineButton;
 
     @FXML
-    private TableColumn<?, ?> eventDateColumn;
+    private TableColumn<Donor, LocalDate> eventDateColumn;
 
     @FXML
-    private TableColumn<?, ?> eventLocationColumn;
+    private TableColumn<Donor, String> eventLocationColumn;
 
     @FXML
-    private TableColumn<?, ?> eventNameColumn;
+    private TableColumn<Donor, String> eventNameColumn;
 
     @FXML
     private TextArea invitationDetailsArea;
 
     @FXML
-    private TableView<?> invitationsTable;
+    private TableView<String> invitationsTable;
 
     @FXML
     void onacceptButtonClick(ActionEvent event) {

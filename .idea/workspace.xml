@@ -5,13 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ac8d1bc-3b98-49c9-a124-758765afd9eb" name="Changes" comment="files updated">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/Donor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/MainDashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/CampaignInitiationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/CampaignInitiationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/Competition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/Competition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/CompetitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/CompetitionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/DonationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/DonationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/DonorEngagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/DonorEngagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/EngageAudienceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/EngageAudienceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/Event_and_Exhibition_Participation_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/Event_and_Exhibition_Participation_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/ExclusiveInvitationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/ExclusiveInvitationsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/FeedbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/FeedbackController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/PromotionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/PromotionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/ProvideFeedbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/ProvideFeedbackController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/ResourcesPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/ResourcesPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/SponsorshipController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/SponsorshipController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/SupportProjectsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/SupportProjectsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/TrackDonationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midterm_2_2211182/shilpakala_academy/MunaiyaTammi/TrackDonationsController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,7 +49,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/IshrakEric/CSE213-IUB.git&quot;,
-    &quot;accountId&quot;: &quot;60302111-c962-4170-9dbd-faed5def435b&quot;
+    &quot;accountId&quot;: &quot;07dca45c-8ed9-44db-aeda-d744e7ffc9e1&quot;
   }
 }</component>
   <component name="MavenImportPreferences">
@@ -43,16 +67,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Google Computer/IdeaProjects/CSE213-IUB/src/main/java/com/midterm_2_2211182/shilpakala_academy/Mumtahina"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Google Computer/IdeaProjects/CSE213-IUB/src/main/java/com/midterm_2_2211182/shilpakala_academy/Mumtahina&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.midterm_2_2211182.shilpakala_academy.MunaiyaTammi" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Google Computer\IdeaProjects\CSE213-IUB\src\main\java\com\midterm_2_2211182\shilpakala_academy\Mumtahina" />
     </key>
@@ -63,6 +92,7 @@
       <recent name="com.midterm_2_2211182.shilpakala_academy" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.midterm_2_2211182.shilpakala_academy.MunaiyaTammi" />
       <recent name="com.midterm_2_2211182.shilpakala_academy.Mumtahina" />
       <recent name="Mumtahina" />
     </key>
@@ -124,12 +154,24 @@
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="deleted file" />
     <MESSAGE value="fixed project structure" />
     <MESSAGE value="deleted" />
     <MESSAGE value="files updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="files updated" />
+    <MESSAGE value="Completed the FXMLs and some model classes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed the FXMLs and some model classes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

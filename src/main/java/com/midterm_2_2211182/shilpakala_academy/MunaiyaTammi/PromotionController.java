@@ -7,7 +7,7 @@ import javafx.scene.control.*;
 public class PromotionController {
 
     @FXML
-    private ComboBox<?> artworkSelection;
+    private ComboBox<String> artworkSelection;
 
     @FXML
     private Button confirmPublishButton;

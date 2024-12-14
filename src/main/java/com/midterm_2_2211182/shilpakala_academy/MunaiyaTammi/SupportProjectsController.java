@@ -29,7 +29,7 @@ public class SupportProjectsController {
     private ToggleGroup paymentToggleGroup;
 
     @FXML
-    private ComboBox<?> projectComboBox;
+    private ComboBox<String> projectComboBox;
 
     @FXML
     private Button submitDonationButton;

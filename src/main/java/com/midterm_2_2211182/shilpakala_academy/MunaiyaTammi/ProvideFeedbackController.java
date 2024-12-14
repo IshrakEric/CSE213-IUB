@@ -9,7 +9,7 @@ import javafx.scene.control.TextArea;
 public class ProvideFeedbackController {
 
     @FXML
-    private ComboBox<?> analyticsSelectionBox;
+    private ComboBox<String> analyticsSelectionBox;
 
     @FXML
     private TextArea analyticsTextArea;
@@ -18,7 +18,7 @@ public class ProvideFeedbackController {
     private TextArea feedbackTextArea;
 
     @FXML
-    private ComboBox<?> performanceSelectionBox;
+    private ComboBox<String> performanceSelectionBox;
 
     @FXML
     private Button submitFeedbackButton;

@@ -9,7 +9,7 @@ import javafx.scene.control.TextField;
 public class Event_and_Exhibition_Participation_Controller {
 
     @FXML
-    private ComboBox<?> EventBox;
+    private ComboBox<String> EventBox;
 
     @FXML
     private TextField EventNameField;

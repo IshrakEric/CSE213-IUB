@@ -25,7 +25,7 @@ public class CampaignInitiationController {
     private Button launchButton;
 
     @FXML
-    private ComboBox<?> targetAudienceComboBox;
+    private ComboBox<String> targetAudienceComboBox;
 
     @FXML
     void onlaunchButtonClick(ActionEvent event) {

@@ -9,25 +9,27 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 
+import java.time.LocalDate;
+
 public class TrackDonationsController {
 
     @FXML
     private ToggleGroup FilterGroup;
 
     @FXML
-    private TableColumn<?, ?> amountColumn;
+    private TableColumn<Donor, Integer> amountColumn;
 
     @FXML
     private RadioButton artistRadioButton;
 
     @FXML
-    private TableColumn<?, ?> dateColumn;
+    private TableColumn<Donor, LocalDate> dateColumn;
 
     @FXML
-    private TableView<?> donationTable;
+    private TableView<String> donationTable;
 
     @FXML
-    private TableColumn<?, ?> donorNameColumn;
+    private TableColumn<Donor, String > donorNameColumn;
 
     @FXML
     private DatePicker endDatePicker;
@@ -39,7 +41,7 @@ public class TrackDonationsController {
     private TextArea impactHighlightsArea;
 
     @FXML
-    private TableColumn<?, ?> purposeColumn;
+    private TableColumn<Donor, String> purposeColumn;
 
     @FXML
     private DatePicker startDatePicker;

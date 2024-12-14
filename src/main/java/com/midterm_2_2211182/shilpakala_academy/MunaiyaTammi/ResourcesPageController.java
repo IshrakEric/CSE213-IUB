@@ -8,7 +8,7 @@ import javafx.scene.control.TableView;
 public class ResourcesPageController {
 
     @FXML
-    private TableColumn<?, ?> dateColumn;
+    private TableColumn<Artist, Integer> dateColumn;
 
     @FXML
     private Button downloadResourceButton;
@@ -17,27 +17,27 @@ public class ResourcesPageController {
     private Button enrollButton;
 
     @FXML
-    private TableColumn<?, ?> linkColumn;
+    private TableColumn<Artist, String> linkColumn;
 
     @FXML
-    private TableColumn<?, ?> registerLinkColumn;
+    private TableColumn<Artist, String> registerLinkColumn;
 
     @FXML
-    private TableView<?> resourcesTable;
+    private TableView<String> resourcesTable;
 
     @FXML
-    private TableColumn<?, ?> titleColumn;
+    private TableColumn<Artist, String> titleColumn;
 
     @FXML
-    private TableColumn<?, ?> typeColumn;
+    private TableColumn<Artist, String> typeColumn;
 
     @FXML
     private Button viewDetailsButton;
 
     @FXML
-    private TableColumn<?, ?> workshopTitleColumn;
+    private TableColumn<Artist, String > workshopTitleColumn;
 
     @FXML
-    private TableView<?> workshopsTable;
+    private TableView<String> workshopsTable;
 
 }

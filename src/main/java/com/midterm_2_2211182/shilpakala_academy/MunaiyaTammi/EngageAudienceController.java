@@ -18,25 +18,25 @@ public class EngageAudienceController {
     private Button deleteEventButton;
 
     @FXML
-    private TableColumn<?, ?> eventDateColumn;
+    private TableColumn<Artist, Integer> eventDateColumn;
 
     @FXML
     private DatePicker eventDatePicker;
 
     @FXML
-    private TableColumn<?, ?> eventDescriptionColumn;
+    private TableColumn<Artist, String> eventDescriptionColumn;
 
     @FXML
     private TextArea eventDescriptionField;
 
     @FXML
-    private TableColumn<?, ?> eventNameColumn;
+    private TableColumn<Artist, String> eventNameColumn;
 
     @FXML
     private TextField eventNameField;
 
     @FXML
-    private TableView<?> eventsTable;
+    private TableView<String> eventsTable;
 
     @FXML
     void onDeleteEventButtonClick(ActionEvent event) {

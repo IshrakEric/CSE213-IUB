@@ -21,7 +21,7 @@ public class DonationController {
     private RadioButton bankTransferRadioButton;
 
     @FXML
-    private ComboBox<?> contributionOptionsBox;
+    private ComboBox<String> contributionOptionsBox;
 
     @FXML
     private RadioButton creditCardRadioButton;

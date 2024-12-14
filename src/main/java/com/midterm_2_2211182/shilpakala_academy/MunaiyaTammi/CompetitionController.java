@@ -12,7 +12,7 @@ public class CompetitionController {
     private TextArea competitionDetailsArea;
 
     @FXML
-    private TableView<?> competitionTable;
+    private TableView<String> competitionTable;
 
     @FXML
     private TextField emailField;
